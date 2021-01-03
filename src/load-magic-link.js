@@ -11,7 +11,7 @@ export default async function loadMagicLink(key) {
     }
 
     if (key && MagicSDK) {
-        sdk = new MagicSDK(key)
+        sdk = new MagicSDK(key, {network: "ropsten"})
         return sdk;
     }
 
