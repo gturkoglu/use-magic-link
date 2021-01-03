@@ -39,7 +39,7 @@ export default async function loadMagicLink(key) {
                 return;
             }
             
-            sdk = new MagicSDK(key);
+            sdk = new MagicSDK(key, {network: "ropsten"});
             resolve(sdk);
         })
     })
